@@ -1,0 +1,19 @@
+{
+  "name": "pathtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "cross-spawn": "^6.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "docker build -t pathtest . && docker run -it pathtest",
+    "build": "docker build -t pathtest . ",
+    "start": "docker run -it pathtest",
+    "devstart": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
